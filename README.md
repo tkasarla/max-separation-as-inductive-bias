@@ -2,11 +2,7 @@
 
 This repository is the official implementation of the  arxiv preprint [Maximum Class Separation as Inductive Bias in One Matrix](https://arxiv.org/abs/2206.08704).
 
-<div>
-
 In our paper, we outline a closed form solution for separating $k+1$ class vectors on $k$ output dimensions. The proposed solution allows us to construct the matrix recursively. 
-
-</div>
 
 $$\begin{align}
 P_1&=\begin{pmatrix}1&-1\end{pmatrix} \in  \mathbb R^{1\times2} \newline \newline 
