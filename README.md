@@ -2,7 +2,7 @@
 
 This repository is the official implementation of the  arxiv preprint [Maximum Class Separation as Inductive Bias in One Matrix](https://arxiv.org/abs/2206.08704).
 
-In our paper, we outline a closed form solution for separating $k+1$ class vectors on the manifold $\mathbb{S}^{k-1}$ with optimal separation angle of $\frac{-1}{k}$. The proposed solution allows us to construct the matrix recursively.
+In our paper, we outline a closed form solution for separating $k+1$ class vectors on the manifold $\\mathbb{S}^{k-1}$ with optimal separation angle of $\frac{-1}{k}$. The proposed solution allows us to construct the matrix recursively.
 
 $$
 \begin{align}
