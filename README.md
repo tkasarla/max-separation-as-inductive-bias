@@ -2,10 +2,10 @@
 
 This repository is the official implementation of the  arxiv preprint [Maximum Class Separation as Inductive Bias in One Matrix](https://arxiv.org/abs/2206.08704).
 
-In our paper, we outline a closed form solution for separating $k+1$ class vectors on $k$ output dimensions. The proposed solution allows us to construct the matrix recursively. 
+In our paper, we outline a [closed form solution](https://math.stackexchange.com/questions/714711/how-to-find-n1-equidistant-vectors-on-an-n-sphere/714781#714781) for separating $k+1$ class vectors on $k$ output dimensions. The proposed solution allows us to construct the matrix recursively. 
 
 $$\begin{align}
-P_1&=\begin{pmatrix}1&-1\end{pmatrix} \in  \mathbb R^{1\times2} \newline \newline 
+P_1&=\begin{pmatrix}1&-1\end{pmatrix} \in  \mathbb R^{1\times2} \newline \newline
 P_k&=\begin{pmatrix}1&-\frac{1}{k}\mathbf1^T \newline \mathbf0&\sqrt{1-\frac1{k^2}} P_{k-1}\end{pmatrix} \in  \mathbb R^{k\times(k+1)}
 \end{align}$$
 
