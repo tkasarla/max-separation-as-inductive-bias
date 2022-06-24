@@ -9,10 +9,13 @@ P_1&=\begin{pmatrix}1&-1\end{pmatrix} \in  \mathbb R^{1\times2} \newline \newlin
 P_k&=\begin{pmatrix}1&-\frac{1}{k}\mathbf1^T \newline \mathbf0&\sqrt{1-\frac1{k^2}} P_{k-1}\end{pmatrix} \in  \mathbb R^{k\times(k+1)}
 \end{align}$$
 
-
 The angle between any two class vectors is $ -1/k$
 
 
+<p align="center">
+<img src="assets/test_2d.gif" width="300"/>
+<img src="assets/test_3d.gif" width="225"/>
+</p>
 
 ## Requirements
 
