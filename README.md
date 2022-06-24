@@ -4,7 +4,10 @@ This repository is the official implementation of the  arxiv preprint [Maximum C
 
 In our paper, we outline a [closed form solution](https://math.stackexchange.com/questions/714711/how-to-find-n1-equidistant-vectors-on-an-n-sphere/714781#714781) for separating $k+1$ class vectors on $k$ output dimensions. The proposed solution allows us to construct the matrix recursively.
 
-The angle between any two class vectors is $ -1/k$
+The angle between any two class vectors is $ -1/k$.
+
+<br>
+
 
 
 $$\begin{align}
