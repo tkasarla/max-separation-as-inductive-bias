@@ -24,7 +24,7 @@ P_k&=\begin{pmatrix}1&-\frac{1}{k}\mathbf1^T \newline \mathbf0&\sqrt{1-\frac1{k^
 <p align="center">
   <b>Recursive update from 2 to 3 classes</b>
   &emsp;
-  <b>Recursive update from 3 to 4 classes<b>
+  <b>Recursive update from 3 to 4 classes</b>
 </p>
 
 
