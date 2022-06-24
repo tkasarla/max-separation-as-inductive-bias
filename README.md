@@ -12,11 +12,6 @@ P_k&=\begin{pmatrix}1&-\frac{1}{k}\mathbf1^T \newline \mathbf0&\sqrt{1-\frac1{k^
 The angle between any two class vectors is $ -1/k$
 
 
-<p align="center">
-<img src="assets/test_2d.gif" width="300"/>
-<img src="assets/test_3d.gif" width="225"/>
-</p>
-
 ## Requirements
 
 To install requirements:
