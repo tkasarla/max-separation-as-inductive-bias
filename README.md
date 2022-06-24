@@ -5,10 +5,8 @@ This repository is the official implementation of the  arxiv preprint [Maximum C
 In our paper, we outline a closed form solution for separating $k+1$ class vectors on the manifold $\\mathbb{S}^{k-1}$ with optimal separation angle of $\frac{-1}{k}$. The proposed solution allows us to construct the matrix recursively.
 
 $$
-\begin{align}
 P_1&=\begin{pmatrix}1&-1\end{pmatrix} \; \; \in \; \mathbb R^{1\times2}\\
 P_k&=\begin{pmatrix}1&-\frac{1}{k}\mathbf1^T\\ \mathbf0&\sqrt{1-\frac1{k^2}}\,P_{k-1}\end{pmatrix} \; \in \; \mathbb R^{k\times(k+1)}
-\end{align}
 $$
 
 
