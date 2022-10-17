@@ -65,7 +65,7 @@ Please consider citing this work using this BibTex entry
 @article{kasarla2022maximum,
   title={Maximum Separation as Inductive Bias in One Matrix},
   author={Kasarla, Tejaswi and  and Burghouts, Gertjan J and van Spengler, Max and van der Pol, Elise and Cucchiara, Rita and Mettes, Pascal},
-  journal={arXiv preprint aarXiv:2206.08704},
+  journal={arXiv preprint arXiv:2206.08704},
   year={2022}
 }
 ```
