@@ -44,7 +44,7 @@ def get_model(network, dims):
 #
 # Load CIFAR100.
 #
-def get_cifar100(network,batch_size):
+def get_cifar100(batch_size):
     # Mean and std pixel values.
     cmean = (0.5070751592371323, 0.48654887331495095, 0.4409178433670343)
     cstd  = (0.2673342858792401, 0.2564384629170883, 0.27615047132568404)
@@ -65,11 +65,11 @@ def get_cifar100(network,batch_size):
     ])
 
     # Get train loader.
-    train_data = torchvision.datasets.CIFAR100(root="../../datasets/", train=True, transform=transform_train)
+    train_data = torchvision.datasets.CIFAR100(root='/path/to/cifar100', train=True, transform=transform_train)
     train_loader = DataLoader(train_data, shuffle=True, num_workers=32, batch_size=batch_size)
 
     # Get test loader.
-    test_data = torchvision.datasets.CIFAR100(root="../../datasets/", train=False, transform=transform_test)
+    test_data = torchvision.datasets.CIFAR100(root='/path/to/cifar100', train=False, transform=transform_test)
     test_loader = DataLoader(test_data, shuffle=False, num_workers=32, batch_size=batch_size)
 
     return train_loader, test_loader
@@ -77,7 +77,7 @@ def get_cifar100(network,batch_size):
 #
 # Load CIFAR10.
 #
-def get_cifar10(network,batch_size):
+def get_cifar10(batch_size):
     # Mean and std pixel values.
     cmean = (0.4914, 0.4822, 0.4465)
     cstd  = (0.2023, 0.1994, 0.2010)

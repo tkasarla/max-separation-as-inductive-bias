@@ -82,7 +82,7 @@ if __name__ == '__main__':
     parser.add_argument("-n", dest="network", default="resnet34", type=str,help='alexnet or resnet34') #resnet34, alexnet
     parser.add_argument("-d", dest="dataset", default="cifar100", type=str,help='cifar10 or cifar100') #cifar10, cifar100
     parser.add_argument("-a", dest="approach", default="sce", type=str,help='loss with only softmax(sce) or with maximum separation(msce)') #sce, msce
-    parser.add_argument("-p", dest="prototypes", default="", type=str,'location of the maximum separation matrix, needed if loss is msce')
+    parser.add_argument("-p", dest="prototypes", default="", type=str,help='location of the maximum separation matrix, needed if loss is msce')
     parser.add_argument("-r", dest="radius", default=1.0, type=float,help='radius of the prototypes, use 1 for alexnet and 0.1 for resnet')
     parser.add_argument("-b", dest="batch_size", default=512, type=int,help='batch size of the training')
     parser.add_argument("-l", dest="learning_rate", default=0.1, type=float,help='learning rate of the algorithm')
@@ -123,7 +123,7 @@ if __name__ == '__main__':
         test_prototypes = prototypes
 
     # Get network.
-    model = utils_an.get_model(args.network, dims)
+    model = utils.get_model(args.network, dims)
 
     # Get optimizer and optional scheduler.
     optimizer = optim.SGD(model.parameters(), lr=args.learning_rate, momentum=0.9, weight_decay=5e-4)
